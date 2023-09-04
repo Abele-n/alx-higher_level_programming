@@ -1,2 +1,3 @@
 #!/bin/bash
-print("The Zen of Python, by TimPeters\\n")
+echo "The Zen of Python, by TimPeters"
+echo
