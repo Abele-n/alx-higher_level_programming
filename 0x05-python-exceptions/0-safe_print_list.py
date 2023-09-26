@@ -9,12 +9,12 @@ def safe_print_list(my_list=[], x=0):
         the number of elements printed
     """
 
-    naf = 0
+    naf_count = 0
     for j in range(x):
         try:
-            print("{}".format(my_list[j]), end="")
-            naf += 1
+            print("{}".format(my_list[j]), end=" ")
+            naf_count += 1
         except IndexError:
             break
-        print("")
-        return (naf)
+    print("")
+    return (naf_count)
