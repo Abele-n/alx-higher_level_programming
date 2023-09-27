@@ -4,12 +4,13 @@
 
 class Square:
     """class representing a square"""
-    def __init__ (self, size=0):
-    """a new Square initialization
 
-    Args:
-    size (int): The new square size
-    """
+    def __init__(self, size=0):
+        """a new Square initialization
+
+        Args:
+        size(int): The new square size
+        """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     elif size < 0:
