@@ -1,2 +1,2 @@
-#!/bin/bash
-python -c 'print("The Zen of Python, by TimPeters")'
+#!/usr/bin/python3
+import this
