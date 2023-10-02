@@ -20,6 +20,7 @@ class Rectangle:
         def height(self):
             """sets the height of the rectangle"""
             return self._height
+
         @height.setter
         def height(self, value):
             if not isinstance(value, int):
@@ -28,10 +29,11 @@ class Rectangle:
                 raise ValueError("height must be >= 0")
             self._height = value
 
-            @property
+        @property
         def width(self):
             """sets the width of the rectangle"""
             return self._width
+
         @width.setter
         def width(self, value):
             if not isinstance(value, int):
@@ -42,7 +44,7 @@ class Rectangle:
 
             def perimeter(self):
                 """Returns the perimeter of the rectangle"""
-                if self._height == 0 or self._width ==0:
+                if self._height == 0 or self._width == 0:
                     return (0)
                 else:
                     return ((2 * self._height) + (2 * self._width))
