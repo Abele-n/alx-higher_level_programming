@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""a json-to-object function definition"""
 import json
+"""a json-to-object function definition"""
 
 
 def save_to_json_file(my_obj, filename):
