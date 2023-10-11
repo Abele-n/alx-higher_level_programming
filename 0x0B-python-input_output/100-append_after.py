@@ -11,7 +11,7 @@ def append_after(filename="", search_string="", new_string=""):
     search string: string to search for within the file
     """
 
-    text = " "
+    text = ""
     with open(filename) as r:
         for line in r:
             text += line
