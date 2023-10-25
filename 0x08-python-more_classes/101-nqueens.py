@@ -61,17 +61,16 @@ for r in range(len(board)):
 return (solution)
 
 
-def xout(board, row, column)
+def xout(board, row, column):
+    """The X out spots on a chessboard
+        Spots where the non-attacking queens cannot be played
+        are X-ed out
+            Args:
+                board (list): current working chessboard
+                row (int): row where queen was last played
+                column (int): column where queen was last played
+    """
 
-
-"""The X out spots on a chessboard
-Spots where the non-attacking queens cannot be played
-are X-ed out
-Args:
-    board (list): current working chessboard
-    row (int): row where queen was last played
-    column (int): column where queen was last played
-"""
 
 # All forward spots X out
 for c in range(column + 1, len(board)):
