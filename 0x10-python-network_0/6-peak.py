@@ -4,9 +4,9 @@ function that finds a peak in a list of unsorted integers.
 """
 
 
-def is_it_peak(list_of_integers):
+def find_peak(list_of_integers):
     """
-    is_it_peak: checks peak in an unsorted integer and None if empty
+    find_peak: checks peak in an unsorted integer and None if empty
     """
     li = list_of_integers
     ln = len(li)
@@ -18,6 +18,6 @@ def is_it_peak(list_of_integers):
         return li[n]
 
     if n != ln - 1 and li[n + 1] >= li[n]:
-        return is_it_peak(li[n + 1:])
+        return find_peak(li[n + 1:])
 
-    return is_it_peak(li[:n])
+    return find_peak(li[:n])
