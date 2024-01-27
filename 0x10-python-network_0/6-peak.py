@@ -7,7 +7,7 @@ function that finds a peak in a list of unsorted integers.
 def is_it_peak(list_of_integers):
     """
     checks peak in an unsorted integer
-    
+
     Args:
     -list_of_integers(list): The list of unsorted integers
 
