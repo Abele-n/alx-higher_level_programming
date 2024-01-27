@@ -9,7 +9,7 @@ from sys import argv
 
 
 r = requests.get("http://api.github.com/repos/{}/{}/commits"
-        .format(argv[2], argv[1]))
+                 .format(argv[2], argv[1]))
 commits = r.json()
 for commit in commits[:10]:
     print(commit.get('sha'), end=': ')
