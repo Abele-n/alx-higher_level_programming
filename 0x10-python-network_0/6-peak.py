@@ -5,15 +5,7 @@ function that finds a peak in a list of unsorted integers.
 
 
 def is_it_peak(list_of_integers):
-    """
-    checks peak in an unsorted integer
-
-    Args:
-    - list_of_integers (list): The list of unsorted integers
-
-    Returns:
-    - int: the peak element in the list
-    """
+    """checks peak in an unsorted integer"""
     li = list_of_integers
     ln = len(li)
     if ln == 0:
