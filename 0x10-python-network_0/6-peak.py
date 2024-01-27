@@ -9,18 +9,21 @@ def is_it_peak(list_of_integers):
     checks peak in an unsorted integer
 
     Args:
-    -list_of_integers(list): The list of unsorted integers
+    - list_of_integers (list): The list of unsorted integers
 
     Returns:
-    -int: the peak element in the list
+    - int: the peak element in the list
     """
     li = list_of_integers
     ln = len(li)
     if ln == 0:
-        return
+        return None
+
     n = ln // 2
     if (n == ln - 1 or li[n] >= li[n + 1]) and (n == 0 or li[n] >= li[n - 1]):
         return li[n]
+
     if n != ln - 1 and li[n + 1] >= li[n]:
         return is_it_peak(li[n + 1:])
+
     return is_it_peak(li[:n])
